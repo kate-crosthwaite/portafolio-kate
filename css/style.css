@@ -674,3 +674,29 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 @media (max-width: 900px) {
     .contact.section { min-height: auto; }
 }
+
+/* Texto justificado en las secciones del portafolio */
+#inicio p,
+#sobre-mi p,
+#habilidades p,
+#proyectos p,
+#educacion p,
+#herramientas p,
+#contacto p {
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+/* Descripciones justificadas en las tarjetas de proyectos */
+#proyectos .project-card p,
+#proyectos .project-card .project-description,
+#proyectos .card p {
+    text-align: justify !important;
+    text-align-last: left;
+    text-justify: inter-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
